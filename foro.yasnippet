@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: Object comprehension
+# key: foro
+# --
+var ${1:key}, ${2:val};
+for ( $1 in $3 ) {
+  if ( $3.hasOwnProperty($1) ) {
+    $2 = $3[$1];
+
+    $0
+  }
+}
